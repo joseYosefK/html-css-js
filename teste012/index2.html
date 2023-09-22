@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste com funções</title>
+</head>
+<body>
+    <header>
+        <h1>teste com javascript</h1>
+    </header>
+    <main>
+        <div>
+            <h2>texte com divisão</h2>
+        <label>Digite um numero:</label><input type="text" id="n1"><label> Digite outro numero:</label><input type="text" id="n2"><button onclick="dividir(n1,n2)">dividir</button>
+        </div>
+        <div id="exibe_resultado">
+            o resultado é:
+        </div>
+    </main>
+</body>
+<script>
+    let n1 = document.getElementById("n1")
+    let n2 =  document.getElementById("n2")
+    var exibeResultado = document.getElementById("exibe_resultado")
+    exibeResultado.innerHTML+=dividir.resultado;
+
+    var divisao = n1 % n2
+
+    function dividir(a,b){
+        var resultado = 0;
+        resultado = a / b;
+        return resultado
+    }
+
+     
+</script>
+</html>

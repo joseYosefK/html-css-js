@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste com imagem</title>
+</head>
+<body>
+   <header>
+        <h1>teste com imagens</h1>
+   </header>
+   <nav>
+        <h2>barra de navegação</h2>
+    </nav>
+   <main>
+        <h2>
+            teste com imagem dinamica
+        </h2>
+        <p>ajuste o tamanho da tela para ajustar a imagem</p>
+        <hr>
+        <picture>
+           <source media="(min-width: 600px)" srcset="imagens/teste-M.png" type="image/png">
+           <source media="(min-width: 1000px)" srcset="imagens/teste-G.png" type="image/png">
+           <img src="imagens/teste-P.png" alt="imagem dinamica">
+        </picture>
+
+   </main>
+</body>
+</html>
