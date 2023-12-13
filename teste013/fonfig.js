@@ -1,4 +1,4 @@
 alert("hallo word!");
-var name = prompt("what is your name?");
+var nome = prompt("what is your name?");
 //cria um elemento temporario na tela
-document.write(`<p>olá ${name}</p>`);
+document.write(`<p>olá ${nome}</p>`);
