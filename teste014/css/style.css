@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('../imagens/pattern004.png');
+}
+div{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid;
+    margin-left: 2px;
+}
+#sp01{
+    background-color: pink;
+}
+#sp02{
+    background-image: linear-gradient(to right,pink,white);
+}
+#sp03{
+    background-image: url('../imagens/pattern003.png');
+}
