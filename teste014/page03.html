@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test with position</title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0px;
+        }
+        main{
+            background-color: aliceblue;
+            /*display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;*/
+            
+        }
+        .container{
+            position: relative;
+            background-image: url('./imagens/target001.png');
+            background-size: 100% 100%;
+            background-color: purple;
+            margin: 10px;
+            width: 300px;
+            height: 150px;
+        }
+        article{
+            background-image: url('./imagens/target001.png');
+            background-size: 100% 100%;
+            background-color:yellow;
+            max-width: 150px;
+            height: 75px;
+        }
+        #content01{
+           background-color: yellow;
+           position: absolute;
+           width: 150px;
+           height: 75px;
+           left: 50%;
+           top: 50%;
+        }
+        #content02{
+           background-color: yellow;
+           position: absolute;
+           width: 150px;
+           height: 75px;
+           left: 25%;
+           top: 25%;
+        }
+        #content03{
+           background-color: yellow;
+           position: absolute;
+           width: 150px;
+           height: 75px;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <article id="content01">
+               
+            </article>
+        </section>
+
+        <section class="container">
+            <article id="content02">
+                
+            </article>
+        </section>
+
+        <section class="container">
+            <article id="content03">
+            </article>
+        </section> 
+    </main>
+</body>
+</html>

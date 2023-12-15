@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test image position</title>
+    <style>
+        body{
+            height: 100vh;
+            background-image: url('./imagens/wallpaper003.jpg');
+            justify-content: center;
+        }
+        div{
+            background-image: url('./imagens/wallpaper003.jpg');
+            width: 90%;
+            height: 200px;
+            border: 2px solid;
+            margin-top: 5px;
+            border-radius: 10px;
+        }
+        #sp01{
+           background-position: left top;
+        }
+        #sp02{
+            background-position: left center;
+        }
+        #sp03{
+            background-position: right bottom;
+        }
+    </style>
+</head>
+<body>
+   <!--
+        This is a test with background image
+    -->
+    <div id="sp01"></div>
+    <div id="sp02"></div>
+    <div id="sp03"></div> 
+</body>
+</html>
