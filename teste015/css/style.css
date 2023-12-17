@@ -1,0 +1,26 @@
+@charset "UTF-8";
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+table{
+    text-align: left;
+    padding: 10px;
+}
+    tr th{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    }
+    td{
+        background-image: linear-gradient(to right,white, rgb(161, 161, 161));
+    }
+    .numerico{
+        text-align: right;
+    }
