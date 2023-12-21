@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>teste com iframe</title>
+</head>
+<body>
+    <header>
+        <h1>Teste com iframes</h1>
+    </header>
+    <main>
+        <h2>o que são iframes?</h2>
+        <p>iframes são uma nova instacia de janela de um navegador, <br>que apresenta de modo in line o conteudo do endereço de link atribuido!</p>
+        <h3>Exemplos de iframe</h3>
+        <!--parametros de um iframe;
+        width = altura
+        right = altura
+        src = caminho
+        title = titulo
+        frameborder = tipo de borda, só recebe 0 ou 1 como parametro
+        para mais configurações de borda use css.
+        allow = recebe os ceguintes parametros mais conhecidos;
+        accelerometer = permite modificar a midia
+        autoplay = inicia uma midia altomaticamente
+        encryptede-midia = para criptografar midias
+        gyroscope = para identificar telas horizontais
+        sandbox = sandbox , para impedir que o site dentro do ifreme
+        colete daods do usuario
+        referrerpolicy = on-referrer , garante que o site detro do iframe não colete informações sobre seu site ou do usuario-->
+        <p>--------------------------------------------</p>
+        <p>ele é in line <iframe width="200" height="115" src="https://www.youtube.com/embed/Ciq_5jY91Ao?si=kuu6pOahy-pTrGcq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="no-referrer"
+        ></iframe></p>
+        <p>para exibir o iframe separaradamente envolva-o em uma div</p>
+        <div class="div">
+            <!--iframe com eendereço local
+            sandbox: allow-mame-origen = permite coleta de dados
+        apenas  de paginas de mesma origem-->
+            <iframe src="./auxi.html" frameborder="1"
+            width="200" height="115" referrerpolicy="no-referrer"
+            sandbox="allow-same-origin">
+            <a href="./auxi.html">clik aqui</a></iframe>
+        </div>
+        <p>para não permitir script use sandbox, mas se você confiar no site que esta no iframe permita com allow-scripts</p>
+        <div>
+            <iframe src="./auxi01.html" frameborder="1"
+            sandbox="allow-scripts"></iframe>
+        </div>
+        <h3>um iframe é ideal para;</h3>
+        <p>aprezentar anucios de terceiros</p>
+        <div>
+            <iframe src="./auxi02.html" frameborder="0"></iframe>
+        </div>
+        <p>exibir videos  de striming</p>
+        <div>
+            <iframe width="200" height="115" src="https://www.youtube.com/embed/Ciq_5jY91Ao?si=kuu6pOahy-pTrGcq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="no-referrer"
+        ></iframe>
+        </div>
+        <p>exibir mapas do google maps</p>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3839.0931095690125!2d-47.86334382561129!3d-15.799043723068094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1703185255401!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p>para exibir mapas de transito como o do wise</p>
+        <div>
+            <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-15.799934&lon=-47.863784&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+        </div>
+        <p>ente outros!</p>
+        <p></p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur praesentium necessitatibus neque autem a quis? Nam nulla laborum nihil fugit ducimus ea illum molestiae. Autem quia error facilis quam iure.
+    </main>
+    <footer>
+        <p>por José Cardoso</p>
+    </footer>
+</body>
+</html>

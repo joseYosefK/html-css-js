@@ -1,0 +1,46 @@
+body{
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: black;
+    color: white;
+    margin-top:0px;
+    padding: 10px;
+    text-align: center;
+}
+main{
+    max-width: 720px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    background-color: darkgrey;
+}
+.div{
+    max-width: 400px;
+    max-height: 200px;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(136, 134, 134);
+}
+iframe{
+    max-width: 300px;
+    min-width: 200px;
+    max-height: 150px;
+    min-height: 115px;
+    margin: auto;
+}
+.cliqui{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    border-radius: 10px 10px;
+    text-decoration: none;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
