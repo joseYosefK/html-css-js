@@ -10,32 +10,351 @@
     <header>
         <h1>Teste com tabela</h1>
     </header>
+
     <main>
         <!--tr linha
             th coluna do header de uma tabela
             td coluna da area de dados da tabela
         -->
-        <table>
+        <table class="table01">
             <tr>
-                <th>Moeda</th><th>Cotação</th><th>Moeda de cambio</th>
+                <th class="th01">Moeda</th>
+                <th class="th01">Cotação</th>
+                <th class="th01">Moeda de cambio</th>
             </tr>
             <tr>
-                <td>Dollar</td>
-                <td class="numerico">R$; 5,01</td>
-                <td>Real BRL</td>
+                <td class="td01">Dollar</td>
+                <td class="numerico td01">R$; 5,01</td>
+                <td class="td01">Real BRL</td>
             </tr>
             <tr>
-                <td>Euro</td>
-                <td class="numerico">R$; 5,53</td>
-                <td>Real BRL</td>
+                <td class="td01">Euro</td>
+                <td class="numerico td01">R$; 5,53</td>
+                <td class="td01">Real BRL</td>
             </tr>
             <tr>
-                <td>Libra Isterlina</td>
-                <td class="numerico">R$; 6,21</td>
-                <td>Real BRL</td>
+                <td class="td01">Libra Isterlina</td>
+                <td class="numerico td01">R$; 6,21</td>
+                <td class="td01">Real BRL</td>
             </tr>
-          
         </table>
-    </main>
+        <!------------------------------------
+            tabela com celulas unificadas
+        -------------------------------------->
+        <table class="table02">
+            <tr>
+                <th class="th02">Minério</th>
+                <th class="th02">Cotação</th>
+                <th class="th02">Moeda de cambio</th>
+            </tr>
+            <tr>
+                <td class="td02">Balxita</td>
+                <td class="numerico td02">R$; 1,01</td>
+                <td class="td02">Real BRL</td>
+            </tr>
+            <tr>
+                <td class="td02">Pirita</td>
+                <td class="numerico td02">R$; 0,53</td>
+                <td class="td02">Real BRL</td>
+            </tr>
+            <tr>
+                <td class="td02">Lítio</td>
+                <td class="numerico td02">R$; 8,21</td>
+                <td class="td02">Real BRL</td>
+            </tr>
+        </table>
+        <!---------------------------------------------------->
+        <table class="table03">
+            <!--
+                tabela com divisão semantica
+                capiton = legenda para ta bela
+                thead = cabeçalho
+                tbody = corpo da tabela
+                tfooter = rodapé da tabela
+            -->
+            <caption>tabela semantica</caption>
+            <thead>
+                <tr>
+                    <th class="th03">Comodites</th>
+                    <th class="th03">Cotação</th>
+                    <th class="th03">Moeda de venda</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td03">Trigo</td>
+                    <td class="numerico td03">R$; 2,01</td>
+                    <td class="td03">Real BRL</td>
+                </tr>
+                <tr>
+                    <td class="td03">Milho</td>
+                    <td class="numerico td03">R$; 0,27</td>
+                    <td class="td03">Real BRL</td>
+                </tr>
+                <tr>
+                    <td class="td03">Soja</td>
+                    <td class="numerico td03">R$; 1,21</td>
+                    <td class="td03">Real BRL</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <!--colspan para mesclar duas celulas -->
+                <th colspan="2" class="th03">Total de Comodites</th>
+                <td class="numerico td03">3</td>
+            </tfoot>
+        </table>
+        <!--------------------------------------------
+            tabela com efeito zebrado
+        ----------------------------------------------->
+        <table class="zebrada">
+            <caption>tabela com efeito zebrado</caption>
+            <thead>
+                <tr>
+                    <th class="thz">Estado</th>
+                    <th class="thz">População</th>
+                    <th class="thz">taxa de natalidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tdz">Maranhão</td>
+                    <td class="tdz numerico">200.001</td>
+                    <td class="tdz numerico">21%</td>
+                </tr>
+                <tr>
+                    <td class="tdz">Ceará</td>
+                    <td class="tdz numerico">300.125</td>
+                    <td class="tdz numerico">18%</td>
+                </tr>
+                <tr>
+                    <td class="tdz">Pará</td>
+                    <td class="tdz numerico">400.215</td>
+                    <td class="tdz numerico">23%</td>
+                </tr>
+                <tr>
+                    <td class="tdz">Minas Gerais</td>
+                    <td class="tdz numerico">600.654</td>
+                    <td class="tdz numerico">8%</td>
+                </tr>
+                <tr>
+                    <td class="tdz">Paraná</td>
+                    <td class="tdz numerico">506.871</td>
+                    <td class="tdz numerico">6%</td>
+                </tr>
+                <tr>
+                    <td class="tdz">Alagoas</td>
+                    <td class="tdz numerico">405.200</td>
+                    <td class="tdz numerico">29%</td>
+                </tr>
+                <tr>
+                    <td class="tdz">Mato Grosso</td>
+                    <td class="tdz numerico">53.600.654</td>
+                    <td class="tdz numerico">9%</td>
+                </tr>
+                <tr>
+                    <td class="tdz">Paraiba</td>
+                    <td class="tdz numerico">1.506.871</td>
+                    <td class="tdz numerico">5%</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="mesclada">
+            <thead>
+                <tr>
+                    <th class="thm" scope="col">grupo</th>
+                    <th class="thm" scope="col">nome</th>
+                    <th class="thm" scope="colgroup">filmes</th>
+                    <th class="thm" scope="col">ano</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><th rowspan="11" scope="rowgroup">homens</th></tr>
+                    <tr>
+                        <td>joão</td>
+                        <td>i</td>
+                        <td>1988</td>
+                    </tr>
+                    <tr>
+                        <td>paulo</td>
+                        <td>j</td>
+                        <td>1999</td>
+                    </tr>
+                    <tr>
+                        <td>pedro</td>
+                        <td>l</td>
+                        <td>2001</td>
+                    </tr>
+                    <tr>
+                        <td>antonio</td>
+                        <td>m</td>
+                        <td>2005</td>
+                    </tr>
+                    <tr>
+                        <td>chico</td>
+                        <td>n</td>
+                        <td>2013</td>
+                    </tr>
+                    <tr>
+                        <td>gustavo</td>
+                        <td>o</td>
+                        <td>1975</td>
+                    </tr>
+                    <tr>
+                        <td>jose</td>
+                        <td>p</td>
+                        <td>2014</td>
+                    </tr>
+                    <tr>
+                        <td>lucas</td>
+                        <td>q</td>
+                        <td>1996</td>
+                    </tr>
+                    <tr>
+                        <td>tiago</td>
+                        <td>r</td>
+                        <td>2018</td>
+                    </tr>
+                    <tr>
+                        <td>daniel</td>
+                        <td>s</td>
+                        <td>2005</td>
+                    </tr>
+                <tr><th scope="rowgroup" rowspan="11">mulheres</th></tr>
+                    <tr>
+                        <td>lucy</td>
+                        <td>a</td>
+                        <td>2019</td>
+                    </tr>
+                    <tr>
+                        <td>maria</td>
+                        <td>b</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>ana</td>
+                        <td>c</td>
+                        <td>1988</td>
+                    </tr>
+                    <tr>
+                        <td>vitoria</td>
+                        <td>d</td>
+                        <td>1993</td>
+                    </tr>
+                    <tr>
+                        <td>josefa</td>
+                        <td>e</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>sinha</td>
+                        <td>f</td>
+                        <td>1998</td>
+                    </tr>
+                    <tr>
+                        <td>paula</td>
+                        <td>g</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>pietra</td>
+                        <td>h</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>danielly</td>
+                        <td>t</td>
+                        <td>2020</td>
+
+                    </tr>
+                    <tr>
+                        <td>antonia</td>
+                        <td>u</td>
+                        <td>2005</td>
+                    </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">total</th>
+                    <td>10</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="cotainer">
+            <table class="tabelabar">
+                <thead>
+                    <tr>
+                    <th>jan</th>
+                    <th>fev</th>
+                    <th>mar</th>
+                    <th>abr</th>
+                    <th>mai</th>
+                    <th>jun</th>
+                    <th>jul</th>
+                    <th>agos</th>
+                    <th>set</th>
+                    <th>out</th>
+                    <th>nov</th>
+                    <th>des</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>586</td>
+                        <td>562</td>
+                        <td>458</td>
+                        <td>658</td>
+                        <td>369</td>
+                        <td>258</td>
+                        <td>654</td>
+                        <td>879</td>
+                        <td>369</td>
+                        <td>658</td>
+                        <td>693</td>
+                        <td>485</td>
+                    </tr>
+                    <tr>
+                        <td>639</td>
+                        <td>458</td>
+                        <td>654</td>
+                        <td>785</td>
+                        <td>693</td>
+                        <td>695</td>
+                        <td>6847</td>
+                        <td>965</td>
+                        <td>3658</td>
+                        <td>489</td>
+                        <td>963</td>
+                        <td>987</td>
+                    </tr>
+                    <tr>
+                        <td>325</td>
+                        <td>254</td>
+                        <td>639</td>
+                        <td>6854</td>
+                        <td>756</td>
+                        <td>698</td>
+                        <td>436</td>
+                        <td>965</td>
+                        <td>632</td>
+                        <td>456</td>
+                        <td>6584</td>
+                        <td>865</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores fugiat, quae labore, assumenda modi, iure dolorum quo ratione voluptates qui eveniet facilis veritatis sunt suscipit obcaecati inventore. Suscipit, nisi autem.
+        Architecto excepturi illum quae vero consequuntur temporibus quis incidunt eum, vel non aut facere, eveniet accusamus corporis! Deleniti consequuntur inventore perferendis, asperiores quibusdam nesciunt, adipisci dicta laborum voluptas delectus porro? <br>
+        Praesentium fugit excepturi dolores aspernatur ratione unde. Omnis saepe quia eligendi vero? Praesentium ipsum omnis, ex reprehenderit molestias commodi magnam, consectetur illo repudiandae minus amet, suscipit quibusdam sed sit. Magni.
+        Qui sapiente harum, aliquam, temporibus ipsam incidunt optio veniam delectus cumque eius quisquam dolorem, explicabo laborum? Amet harum inventore voluptates ab distinctio quasi dolore placeat quis eligendi velit, sint maxime.
+        Sit exercitationem reiciendis molestias repellat voluptatum reprehenderit, dolorum ipsa deleniti doloremque aperiam minus molestiae porro quia rerum similique quibusdam, nostrum ea, nulla animi. Obcaecati laudantium iusto molestiae, animi ex asperiores. <br>
+        Nobis id quia expedita cupiditate illo, magni ut nostrum exercitationem possimus dignissimos reprehenderit mollitia quidem! Deserunt dolorem possimus necessitatibus deleniti! Ipsa eum officia soluta dignissimos quisquam amet, consequatur culpa laboriosam. <br>
+        Fugit molestias vero, provident soluta voluptates amet? Ea, quod impedit. Eaque repellendus recusandae sed consectetur molestias pariatur delectus fugit ducimus qui! Voluptates fuga saepe iusto excepturi vero ea aspernatur nihil!
+        A ducimus unde enim esse explicabo debitis facilis et magni eveniet, neque earum. Dolor ducimus tempore deserunt doloremque, dolores suscipit et ut numquam sapiente ipsam quo fuga quis cupiditate excepturi? <br>
+        Animi, suscipit numquam optio quos voluptatem placeat rem voluptas sapiente id? Sit veniam quae eaque reprehenderit quas earum laudantium, doloribus et facere debitis voluptatem unde rerum dicta, iusto molestiae? Tempora?
+        Voluptates ut reiciendis rerum. Maxime voluptatibus fugiat quasi, rem non optio, consectetur impedit assumenda ullam inventore perspiciatis. Voluptas porro ipsa a voluptatum laborum adipisci, at itaque alias quod, reprehenderit ex?</p>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur libero recusandae cupiditate quis laborum porro commodi officia doloribus dolorum dolores. Sunt atque neque perferendis itaque. Vero at officiis quidem aperiam.</span><span>Culpa iusto quia unde quaerat aspernatur veritatis saepe! Quidem provident, iste velit amet rem itaque aspernatur suscipit fuga nisi alias sit? Nam dicta soluta consequatur. Rem inventore aliquam nesciunt ex.</span><span>Mollitia fugiat omnis, ullam repellat ducimus eos officiis molestias inventore beatae repellendus est laboriosam minus aut ut nam hic vitae iste blanditiis velit, iure labore rerum animi. Sunt, rem harum?</span><span>Rerum ea facere quae voluptates quia odit repudiandae libero, vero, esse, temporibus eius. Accusantium repudiandae perspiciatis repellat architecto, delectus, nemo ratione necessitatibus sint ullam, sapiente voluptate modi fugiat quaerat dolore!</span><span>Assumenda minus deserunt sequi quisquam dolore magni error, eaque doloribus vitae? Fugit rem ab at eum ipsa ratione suscipit facilis voluptatem, deleniti soluta nemo quia impedit nobis a adipisci earum!</span></p>
+        <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum modi magni incidunt quidem facilis accusamus nisi tempore! Culpa inventore porro illum temporibus vero obcaecati saepe magni voluptates, quaerat iusto nemo?</span><span>Eius amet eligendi omnis expedita eos ipsum alias quis, consequatur natus iste. Optio, ipsam reiciendis eos dolorem veritatis officiis error blanditiis. Neque voluptate consectetur numquam sed autem harum cum aperiam?</span><span>Veniam explicabo cupiditate dignissimos. Laborum, natus. Pariatur consectetur optio deserunt repellendus repudiandae doloribus. Autem iure unde magni. Assumenda accusantium culpa nemo praesentium, id explicabo porro consequuntur hic molestiae nostrum at.</span><span>Voluptates, a? Aspernatur aliquam amet ex mollitia. Quisquam aliquid nostrum ducimus odio rerum tempore maxime, laboriosam consequuntur, adipisci, deleniti libero at suscipit dolorum sint perspiciatis aliquam molestiae deserunt. Et, sunt.</span><span>Ipsam aliquam earum ipsum voluptates deserunt corrupti dolorem odit magni minima accusamus quaerat praesentium, sit consectetur dolores sint eos numquam omnis alias. Voluptates quasi dolores in magni quis ratione suscipit.</span></p>
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis enim veniam dolore labore suscipit porro quibusdam, voluptatibus incidunt, architecto velit laboriosam, quos ipsum cupiditate? Atque impedit ratione laboriosam porro.</span><span>Quidem consectetur nostrum culpa ad quis neque molestiae iste nam, cupiditate, labore id minus quibusdam illo odio corrupti reiciendis minima illum cumque! Impedit unde hic magnam provident vero molestias deserunt.</span><span>Tenetur consectetur sed inventore sunt cupiditate aperiam quo qui? Accusantium dolore eius ullam consequuntur repellat blanditiis quibusdam non odio neque, ipsam impedit modi eligendi possimus voluptatibus ratione? At, voluptas iusto?</span><span>Ad rem esse cumque. Iure veritatis illum ratione, deleniti perspiciatis aliquid adipisci eos alias ducimus repellendus sed atque esse quasi corrupti earum quisquam. Dolor atque quaerat harum dolorem odit? Et.</span><span>Quisquam culpa similique doloremque iure ad fugiat vero eius dolorem blanditiis? Quaerat voluptatum quis vitae expedita corporis eos? Nobis soluta culpa voluptate perspiciatis quos vero, natus ab magnam facere eum.</span></p>
 </body>
 </html>

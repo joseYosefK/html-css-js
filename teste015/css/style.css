@@ -9,18 +9,153 @@ header{
     padding: 10px;
     text-align: center;
 }
-table{
-    text-align: left;
-    padding: 10px;
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
-    tr th{
+.table01{
+    text-align: left;
+    margin: 10px;
+}
+    .th01{
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 5px;
     }
-    td{
+    .td01{
         background-image: linear-gradient(to right,white, rgb(161, 161, 161));
     }
     .numerico{
         text-align: right;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+    /*------------------------------------------------*/
+
+.table02{
+    /*para unir visualmente as celulas de uma tabela*/
+    border-collapse: collapse;
+    /*-----------------------------------------------*/
+    border: 1px solid black;
+    margin: 10px;
+   
+}
+    .th02{
+    background-color: black;
+    color: white;
+    padding: 5px;
+
+    }
+    .td02{
+        background-image: linear-gradient(to right,white,rgb(150, 149, 149));
+        border: 1px solid black;
+        padding: 10px;
+        vertical-align:bottom;/*alinhamento vertical*/
+        text-align: left;/*alinhamento horizontal*/
+    }
+    /*------------------------------------------------------------*/
+
+.table03{
+        /*para unir visualmente as celulas de uma tabela*/
+        border-collapse: collapse;
+        /*-----------------------------------------------*/
+        border: 1px solid black;
+        margin: 10px;
+       
+    }
+    .th03{
+        background-color: black;
+        color: white;
+        padding: 5px;
+        }
+        .td03{
+            background-image: linear-gradient(to right,white,rgb(150, 149, 149));
+            border: 1px solid black;
+            padding: 10px;
+            vertical-align:bottom;/*alinhamento vertical*/
+            text-align: left;/*alinhamento horizontal*/
+        }
+    /*---------------------------------------------------------*/
+
+table.zebrada{
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 10px;
+    position: relative;
+}
+    .tdz{
+        padding: 5px;
+        border: 1px solid black;
+    }
+    /*aplica selecionando de 2 em 2 o  background-color as tr (linhas)*/  
+    table.zebrada > tbody > tr:nth-child(2n){/*opições; (odd), (even)*/
+        background-color: rgb(158, 157, 157);
+    }
+    table.zebrada > tbody > tr:nth-child(odd){
+        background-image: linear-gradient(to right,white, rgb(209, 206, 206));
+    }
+    /*tornando o cabeçalho da tabela fixo*/
+    .thz{
+        position: sticky;
+        background-color: black;
+        padding: 8px;
+        color: white;
+        border-left: 1px solid white;
+
+    }
+    /*--------------------------------------------
+    escopo em tabelas
+    ---------------------------------------------*/
+    .mesclada{
+        border: 1px solid black;
+        margin: 10px;
+        background-color: yellow;
+        position: relative;
+    }
+    .thm{
+        background-color: black;
+        color: white;
+    }
+    table.mesclada> thead > tr th{
+        background-image: linear-gradient(to top,rgb(0, 48, 0),black);
+        text-align: center;
+        color: white;
+        padding: 10px;
+        position: sticky;
+
+    }
+    
+    table.mesclada > tbody tr > td{
+        border: 1px solid black;
+        width: 100px;
+        background-color: yellowgreen;
+    }
+    table.mesclada > tbody tr > th{
+        border: 1px solid black;
+        width: 100px;
+        background-color: yellowgreen;
+    }
+    table.mesclada > tfoot tr > th{
+        border: 1px solid black;
+        width: 100px;
+        background-color: green;
+    }
+    .tabelabar{
+        max-width: 400px;
+        border: 1px solid black;
+        margin: 10px;
+    }
+    table.tabelabar > thead > tr>th{  
+        background-color: black;
+        color: white;
+        width: 200px;
+    }
+    .tabelabar>tbody>tr>td{
+        background-color: darkgray;
+        border: 1px solid black;
+        width: 200px;
+    }
+    .cotainer{
+        overflow-x: auto;
     }
