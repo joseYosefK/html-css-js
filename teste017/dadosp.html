@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="endereco.html">Endereço</a>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="post">
+            <legend>Dados pessoais</legend>
+            <fieldset>
+                <label for="inome">Nome</label>
+                <input 
+                type="text" 
+                name="nom" 
+                id="inome"
+                required
+                pattern="^[a-Z]$"
+                maxlength="30"
+                oninput="nome.innerHTML = inome.value">
+                <br>
+                <label for="inascimento">Nascimento:</label>
+                <input 
+                type="date" 
+                name="Nascimento" 
+                id="inascimento"
+                required
+                oninput="nascimento.innerHTML = inascimento.value">
+                <br>
+                <label for="iemail">E-mail:</label>
+                <input 
+                type="email" 
+                name="e-mail" 
+                id="iemail"
+                required
+                oninput="email.innerHTML = iemail.value">
+                <br>
+                <!--teste com data lista-->
+                <label for="prof">profição:</label>
+                <input type="text" id="prof" list="list"
+                oninput="profi.innerHTML = prof.value">
+                <datalist id="list">
+                    <option>Professor</option>
+                    <option>Altonomo</option>
+                    <option>desenvolvedor web</option>
+                </datalist>
+
+            </fieldset>
+            <legend>Genero</legend>
+            <fieldset>
+                <!--para que a seleção funcione corretamente
+                o atributo name dos inputs devem posuir o mesmo nome-->
+                <input type="radio" name="sexo" id="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="sexo" id="homossexual">
+                <label for="homossexual">Homossexual</label>
+                <input type="radio" name="sexo" id="Bissexoal">
+                <label for="Bissexoal">Bissexoal</label>
+                <input type="radio" name="sexo" id="Masculino">
+                <label for="Masculino">Masculino</label>
+            </fieldset>
+            <fieldset>
+                <label for="imsg">Deixe um comentário</label>
+                <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </fieldset>
+            <!--teste com output-->
+            <legend>Confirme os seus dados</legend>
+            <fieldset>
+                <output id="nome"></output>
+                <br>
+                <output id="nascimento"></output>
+                <br>
+                <output id="email"></output>
+                <br>
+                <output id="profi"></output>
+                <br>
+                <output id="sexo"></output>
+            </fieldset>
+            <button type="submit">salvar</button>
+        </form>
+    </main>
+</body>
+</html>

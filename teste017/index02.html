@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test with form</title>
+</head>
+<body>
+    <header>
+        <h1>Test with form</h1>
+    </header>
+    <main>
+        <!--teste com metodos de envio get, neste metodo os daods são exibidos na barra de pesquiza do navegador o que não é ideal para o envio de dados senciveis-->
+        <form action="#" method="get">
+            <label for="nome">Name</label>
+            <input 
+            type="text" 
+            name="nome" 
+            id="nome"
+            size="20"
+            minlength="3"
+            maxlength="20"
+            required>
+            
+            <br>
+            <label for="senha">Password</label>
+            <input 
+            type="password" name="senha" 
+            id="senha"
+            size="10"
+            length="8"
+            required>
+
+            <input type="submit" value="Sub">
+        </form>
+        <hr>
+        <!--o metodo post é ideal para eviar dados acima de 3 mil bytes, e não exibe os dados na barra do navegador-->
+        <form action="#" method="post" autocomplete="off">
+            <label for="nome">Name</label>
+            <input 
+            type="text" 
+            name="nome" 
+            id="nome"
+            size="20"
+            minlength="3"
+            maxlength="20"
+            placeholder="your name in hire"
+            required>
+            
+            <br>
+            <label for="senha">Password</label>
+            <input 
+            type="password" name="senha" 
+            id="senha"
+            size="10"
+            length="8"
+            required
+            placeholder="writ a password">
+            <button type="submit">Sub</button>
+            <button type="reset">Reset</button>
+        </form>
+        <hr>
+        <!--utilizar autocomplites para permitir que o navegador preencha os campos segundo seu gerenciador de dados local do navegador-->
+        <form action="#" method="post" autocomplete="on">
+            <label for="nome">Name</label>
+            <input 
+            type="text" 
+            name="nome" 
+            id="nome"
+            size="30"
+            minlength="3"
+            maxlength="30"
+            placeholder="your name name user or email addrees"
+            required
+            autocomplete="username">
+            
+            <br>
+            <label for="senha">Password</label>
+            <input 
+            type="password" name="senha" 
+            id="senha"
+            size="10"
+            length="8"
+            required
+            placeholder="writ 8 lettle"
+            autocomplete="current-password">
+            <button type="submit">Sub</button>
+            <button type="reset">Reset</button>
+        </form>
+        <hr>
+        <form action="#" method="post" autocomplete="on">
+            <label for="nome">Name</label>
+            <input 
+            type="text" 
+            name="nome" 
+            id="nome"
+            size="30"
+            minlength="3"
+            maxlength="30"
+            placeholder="your name name user or email addrees"
+            required
+            >
+            
+            <br>
+            <label for="nota">nota</label>
+            <input 
+            type="number" name="nota" 
+            id="nota"
+            size="10"
+            max ="10"
+            step="0.5"
+            required
+            placeholder="writ 8 numbers"
+            autocomplete="current-password">
+            <br>
+            <label for="idate">date:</label>
+            <input 
+            type="date" 
+            name="idata"
+            id="idate">
+            <button type="submit">Sub</button>
+            <button type="reset">Reset</button>
+        </form>
+        <hr>
+        <!--formulario com os tipos
+        email,tel e tag address,
+        a expresão regex para validar um numero telefonico-->
+        <form action="#" method="post" autocomplete="on">
+            <legend>address</legend>
+            <fieldset>
+                <label for="iname">name:</label>
+                <input
+                type="text"
+                name="iname"
+                id="iname"
+                minlength="3"
+                maxlength="30"
+                required>
+                <br>
+                <label for="email">email:</label>
+                <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                required>
+                <br>
+                <label for="itel">tel:</label>
+                <input
+                type="tel"
+                name="itel"
+                id="itel"
+                pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+                required
+                placeholder="(xx)xxxxx-xxxx">
+                <br>
+                <label for="address">address:</label>
+                <address>
+                    <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    required?>
+                </address>
+            </fieldset>
+            <button type="submit">sub</button>
+        </form>
+        <hr>
+        <form action="#" method="post">
+            <!--formulario com check box-->
+
+            <fieldset>
+                <input type="checkbox" name="yello" id="yello">
+                <label for="yello">yello</label>
+                <br>
+                <input type="checkbox" name="blue" id="blue">
+                <label for="blue">blue</label>
+                <br>
+                <input type="checkbox" name="red" id="red">
+                <label for="red">red</label>
+            </fieldset>
+            <button type="submit">sub</button>
+            <button type="reset">desable</button>
+        </form>
+    </main>
+</body>
+</html>
