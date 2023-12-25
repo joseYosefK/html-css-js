@@ -1,0 +1,42 @@
+/*teste com midia types
+teste com typecal device breackpoints
+-------------------------------------
+celulares: 600 a 768px
+tabletes: 768 a 992px
+desktop 992 a 1200px
+grandes telas: acima de 1200px*/
+@media print{
+    body{
+        background-image: url('../imagens/back-print.jpg');
+    }
+    main{
+        font-family: 'Courier New', Courier, monospace;
+        border: 2px solid black;
+    }
+    main h1{
+        color: black
+    }
+    #phone{display: none;}
+    #print{display: block;}
+}
+@media screen and (min-width:720px) and (max-width:992px){
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+    #phone{display: none;}
+    #tablet{display: block;}
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+    #phone{display: none;}
+    #pc{display: block;}
+}
+@media screen and (min-width:1200px){
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+    #phone{display: none;}
+    #tv{display: block;}
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    text-align: center;
+}
+menu{
+    display: none;
+}
+main{
+    font-family: 'courier New',courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+article::after{
+    content: 'teste para impressão';
+    font-size: 2em;
+}
+footer{
+    display: none;
+}

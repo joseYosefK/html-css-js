@@ -1,0 +1,10 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    height: 100vh;
+}
+body{
+    background-color: black;
+}
