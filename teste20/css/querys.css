@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 720px){
+    header{
+        padding-top: 20px;
+    }
+    header h1{ font-size: 3em;}
+    #Menuburguer{display: block;}
+    #icone{display: none;}
+    menu > ul > li{display: inline;}
+    menu > ul > li > a{display: inline;
+    border-radius: 5px;}
+    menu{
+        background-color: rgb(109, 109, 109);
+        padding: 10px;
+        text-align: left;
+    }
+    main{
+        max-width: 600px;
+    }
+    
+}
